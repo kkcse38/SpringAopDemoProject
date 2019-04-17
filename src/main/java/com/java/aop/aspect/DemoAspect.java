@@ -1,4 +1,4 @@
-package com.java.aop.dao.aspect;
+package com.java.aop.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -23,6 +23,7 @@ public class DemoAspect {
 //	}
 //	
 	
+	//Used point cut with wild card operator
 	@Before("execution(public void add*())")
 	public void beforeAddAccountAdviceforAllMethods(){
 		System.out.println("Before addAccount Advice\n");
